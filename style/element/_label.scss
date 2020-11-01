@@ -1,0 +1,15 @@
+.el_label {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    background-color: $primary;
+    color: $onPrimary;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 20px;
+    border-radius: 0.625rem;
+}
+
+.el_label.el_label__secondary {
+    background-color: $secondary;
+}

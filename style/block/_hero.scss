@@ -1,0 +1,33 @@
+.bl_hero {
+    height: 70vh;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url('./img/img.png');
+
+    @media screen and (max-width: $bp-md) {
+        height: 50vh;
+    }
+
+    @media screen and (max-width: $bp-xsm) {
+        height: 281px;
+    }
+}
+
+.bl_hero_inner {
+    max-width: 1312px;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.bl_hero_title.el_lv1Heading {
+    color: $onPrimary;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

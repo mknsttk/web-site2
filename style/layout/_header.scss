@@ -1,0 +1,23 @@
+.ly_header {
+    background-color: $primary;
+}
+
+.ly_header.ly_header__sticky {
+    position: sticky;
+    z-index: $z-header;
+    top: 0;
+}
+
+.ly_header_inner {
+    max-width: 1316px;
+    padding-top: 1.75rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (max-width: 960px) {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+}

@@ -1,0 +1,32 @@
+.el_btn {
+    display: inline-block;
+    width: 240px;
+    max-width: 100%;
+    padding: 0.625em 1em;
+    background-color: $primary;
+    border-radius: 1.5rem;
+    color: $onPrimary;
+    text-transform: uppercase;
+    text-align: center;
+    transition: .25s;
+    border: 2px solid transparent;
+}
+
+.el_btn:focus,
+.el_btn:hover {
+    background-color: $surface;
+    border-color: $primary;
+    color: $primary;
+}
+
+.el_btn.el_btn__outlined {
+    background-color: $surface;
+    border: 2px solid $primary;
+    color: $primary;
+}
+
+.el_btn.el_btn__outlined:focus,
+.el_btn.el_btn__outlined:hover {
+    background-color: $primary;
+    color: $onPrimary;
+}

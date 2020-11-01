@@ -1,0 +1,22 @@
+.bl_mediaUnit {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -1rem;
+    margin-left: -1rem;
+
+    @media screen and (max-width: $bp-md) {
+        flex-direction: column;
+        margin-right: 1rem;
+    }
+
+    > * {
+        width: calc(50% - 1rem);
+        margin-top: 1rem;
+        margin-left: 1rem;
+        
+        @media screen and (max-width: $bp-md) {
+            width: 100%;
+        }
+    }
+}
+

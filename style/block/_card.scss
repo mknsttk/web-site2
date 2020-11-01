@@ -1,0 +1,71 @@
+.bl_card {
+    position: relative;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .25s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+}
+    
+.bl_card:hover{
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+}
+
+.bl_card:hover .bl_card_link, 
+.bl_card:focus .bl_card_link {
+    text-decoration: underline;
+    color: $primary;
+}
+
+.bl_card_imgWrapper {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+
+    > img {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+    }
+
+}
+
+.bl_card_body {
+    padding: 1rem;
+    background-color: $surface;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+
+    > * + * {
+        margin-top: 1rem;
+    }
+}
+
+.bl_card_body > .el_label {
+    line-height: 24px;
+    border-radius: pxToRem(12, 16);
+    background-color: $secondary;
+}
+
+.bl_card_link {
+    color: $onSurface;
+    transition: .25s;
+}
+
+.bl_card_link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.bl_card_time {
+    display: block;
+    color: grey;
+    font-size: pxToRem(14, 16);
+}
+
